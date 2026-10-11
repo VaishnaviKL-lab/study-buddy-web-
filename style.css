@@ -1,0 +1,185 @@
+
+/* Basic page setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf7ff;
+    color: #39334b;
+}
+
+/* Top navigation */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    border-bottom: 1px solid #eee7f7;
+}
+
+.topbar h2 {
+    margin: 0;
+    color: #8872bd;
+}
+
+.topbar span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #968ba9;
+}
+
+/* Main content */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+/* Welcome section */
+.welcome {
+    padding: 25px 0;
+}
+
+.eyebrow {
+    color: #a18acb;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.welcome h1 {
+    font-size: 38px;
+    margin: 15px 0;
+}
+
+.welcome > p:last-child {
+    color: #837b91;
+}
+
+/* Quote card */
+.quote {
+    background: #eee7ff;
+    padding: 24px;
+    border-radius: 18px;
+    margin: 20px 0 28px;
+}
+
+.quote p {
+    font-size: 19px;
+    font-style: italic;
+    margin-top: 0;
+}
+
+.quote span {
+    font-size: 13px;
+    color: #83729f;
+}
+
+/* Two-column dashboard */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 22px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #eee8f5;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 25px #4c356b0a;
+}
+
+.card h2 {
+    font-size: 19px;
+}
+
+.muted {
+    color: #968da3;
+    font-size: 13px;
+}
+
+/* To-do tasks */
+.task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 23px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.task input {
+    accent-color: #a48bd9;
+    width: 17px;
+    height: 17px;
+}
+
+.task input:checked + span {
+    text-decoration: line-through;
+    color: #aaa2b6;
+}
+
+/* Timer card */
+.timer {
+    text-align: center;
+    background: #fff0f5;
+}
+
+.timer .eyebrow {
+    color: #c47e9c;
+}
+
+.clock {
+    font-size: 54px;
+    font-weight: bold;
+    margin: 28px 0 12px;
+    color: #a65f84;
+}
+
+.timer-label {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 9px 14px;
+    background: #f9dce8;
+    color: #a65f84;
+    border-radius: 20px;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #a49aaf;
+    font-size: 12px;
+    padding: 45px 0 20px;
+}
+
+/* Mobile-friendly layout */
+@media (max-width: 650px) {
+    .topbar {
+        padding: 18px 5%;
+    }
+
+    .topbar span {
+        font-size: 9px;
+    }
+
+    .container {
+        margin-top: 20px;
+        padding: 0 16px;
+    }
+
+    .welcome h1 {
+        font-size: 29px;
+    }
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+}
